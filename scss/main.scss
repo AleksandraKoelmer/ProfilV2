@@ -1,0 +1,184 @@
+    @import "mixins";
+    body {
+        background-color: #efefef;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    * {
+        font-size: 62.5%;
+        @include small {
+            font-size: 100%;
+        }
+        @include medium {
+            font-size: 80%;
+        }
+        @include large {
+            font-size: 100%;
+        }
+    }
+    
+    //all sections
+    button,
+    a {
+        background-clip: padding-box;
+        background-color: #ffc107;
+        border: 1px solid #ced4da;
+        border-radius: 0.4rem;
+        color: #000;
+        cursor: context-menu;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        margin-left: 16%;
+        margin-right: 10%;
+        padding: 1rem;
+        text-decoration: none;
+        transition: all .5s ease;
+        @include small {
+            display: block;
+            width: 10rem;
+            margin: 1rem auto auto;
+            text-align: center;
+            padding: 0.4rem;
+        }
+    }
+    
+    a:hover,
+    button:hover {
+        background-color: #d3a009;
+    }
+    
+    //header
+    #header-container {
+        display: flex;
+        align-items: center;
+        background-color: #212529;
+        margin: auto;
+        padding: 2rem 10rem 2rem 10rem;;
+        position: sticky;
+        top: 0;
+    }
+
+
+    #counter-container {
+        color: #fff;
+        display: flex;
+        font-size: 1rem;
+        justify-content: center;
+        margin: auto;
+        padding: 1.5rem;
+    }
+    
+    input {
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
+        line-height: 1.5;
+        width: 10rem;
+        font-size: 1rem;
+    }
+    
+    #articles-input {
+        display: flex;
+        justify-content: center;
+
+        width: 15%;
+        @include small {
+            width: 80%;
+        }
+    }
+
+    #library-button{
+
+
+        width: 15%;
+        @include small {
+            width: 40%;
+
+    }}
+    
+    //list
+    #list-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-top: 3rem;
+        @include small {
+            padding-top: 1rem;
+        }
+    }
+    
+    #library-button,
+   {
+        margin-left: 0;
+        margin-right: 0;
+
+        @include small {
+            height: 4rem;
+            margin: 0.5rem;
+        }
+    }
+
+    .sorting-button,
+    #go-to-list-button{
+        margin: auto;
+        @include small {
+            height: 4rem;
+            margin: 0.5rem;
+        }
+
+    }
+
+    .remove-from-library-button {
+        @include medium {
+            margin: 2rem;
+        }
+        @include large {
+            margin: 2rem;
+        }
+    }
+    
+    .article-container {
+        background-color: #fff;
+        border-radius: 0.375rem;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .15);
+        margin: auto auto 2rem;
+        padding: 2rem 2rem 2rem 4rem;
+        width: 70%;
+        @include small {
+            width: 90%;
+            padding: .5rem;
+            margin-bottom: 1rem;
+        }
+        @include medium {
+            width: 85%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    span {
+        font-size: 0.9rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    h4 {
+        font-style: italic;
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    
+    p {
+        width: 85%;
+        font-size: 1rem;
+    }
+    
+    h6 {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
